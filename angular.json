@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eversis-frontend-task": {
+    "angular-task-1": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/eversis-frontend-task",
+            "outputPath": "dist/angular-task-1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "eversis-frontend-task:build"
+            "browserTarget": "angular-task-1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "eversis-frontend-task:build:production"
+              "browserTarget": "angular-task-1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "eversis-frontend-task:build"
+            "browserTarget": "angular-task-1:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "eversis-frontend-task-e2e": {
+    "angular-task-1-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "eversis-frontend-task:serve"
+            "devServerTarget": "angular-task-1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "eversis-frontend-task:serve:production"
+              "devServerTarget": "angular-task-1:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "eversis-frontend-task"
+  "defaultProject": "angular-task-1"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "eversis-frontend-task",
+  "name": "angular-task-1",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,9 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "predeploy": "ng build --base-href=\"/eversis-frontend-task/\" --deploy-url=\"\"",
-    "predeploy_prod": "ng build --prod --base-href=\"/eversis-frontend-task/\" --deploy-url=\"\"",
-    "gh_deploy": "gh-pages -d dist/eversis-frontend-task",
+    "predeploy": "ng build --base-href=\"/angular-task-1/\" --deploy-url=\"\"",
+    "predeploy_prod": "ng build --prod --base-href=\"/angular-task-1/\" --deploy-url=\"\"",
+    "gh_deploy": "gh-pages -d dist/angular-task-1",
     "deploy": "npm run predeploy && npm run gh_deploy",
     "deploy_prod": "npm run predeploy_prod && npm run gh_deploy"
   },

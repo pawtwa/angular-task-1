@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'eversis-frontend-task'`, () => {
+  it(`should have as title 'angular-task-1'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('eversis-frontend-task');
+    expect(app.title).toEqual('angular-task-1');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to eversis-frontend-task!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-task-1!');
   });
 });
