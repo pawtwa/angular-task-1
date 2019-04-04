@@ -11,7 +11,17 @@ import { UserInterface } from './../../../../src/app/shared/models/user.model';
 })
 export class ViewComponent implements OnInit {
   user$: Observable<UserInterface>;
-
+  /**
+   * -1 - inital state
+   * 1 - loading
+   * 0 - loaded
+   */
+  loadingImage = -1;
+  /**
+   * -1 - inital state
+   * 1 - has access
+   * 0 - has not acces
+   */
   hasAccess = -1;
 
   constructor(
@@ -23,6 +33,11 @@ export class ViewComponent implements OnInit {
   }
 
   checkAccess() {
+    this.loadingImage !== 0 ? this.loadingImage = 1 : null;
     this.hasAccess = this.userService.user.age >= 18 ? 1 : 0;
+  }
+
+  onImageLoad() {
+    this.loadingImage = 0;
   }
 }

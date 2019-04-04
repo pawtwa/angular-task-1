@@ -15,7 +15,15 @@
       <div class="row" *ngIf="hasAccess === 1">
         <div class="col">
           <div class="mx-auto" style="max-width: 500px; max-height: 500px;">
-              <img 
+            <div class="d-flex justify-content-center" *ngIf="loadingImage">
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+
+            <img
+              [hidden]="loadingImage" 
+              (load)="onImageLoad()"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1024px-Angular_full_color_logo.svg.png" 
               class="img-fluid" 
               alt="Image for adults"
